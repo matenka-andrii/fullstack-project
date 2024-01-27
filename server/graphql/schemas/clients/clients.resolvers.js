@@ -7,5 +7,9 @@ export default {
     Query: {
         client: (parent, { clientId }) => clientsService.getClientById(clientId),
         clients: () => clientsService.getClients(),
+    },
+    Mutation: {
+        addClient: (parent, { body }) => clientsService.addClient(body),
+        deleteClient: (parent, { clientId }) => clientsService.deleteClient(clientId),
     }
 }

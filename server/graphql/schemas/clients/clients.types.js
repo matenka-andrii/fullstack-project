@@ -3,6 +3,16 @@ const Clients = `
         client(clientId: String!): Client
         clients: [Client]
     }
+    type Mutation {
+        addClient(body: AddClientBody): Client
+        deleteClient(clientId: String!): String
+    }
+    
+    input AddClientBody {
+        name: String!
+        email: String!
+        phone: String!
+    }
 `;
 
 export default Clients;

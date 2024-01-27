@@ -1,4 +1,10 @@
 const Common = `
+    enum ProjectStatuses {
+        NOT_STARTED
+        IN_PROGRESS
+        COMPLETED
+    }
+    
     type Client {
         id: String!
         name: String!
@@ -11,7 +17,7 @@ const Common = `
         client: Client!
         name: String!
         description: String!    
-        status: String!    
+        status: String
     }
 `;
 

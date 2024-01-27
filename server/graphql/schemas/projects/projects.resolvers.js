@@ -10,7 +10,12 @@ export default {
         project: (parent, { projectId }) => projectsService.getProjectById(projectId),
         projects: () => projectsService.getProjects(),
     },
+    Mutation: {
+        addProject: (parent, { body }) => projectsService.addProject(body),
+        deleteProject: (parent, { projectId }) => projectsService.deleteProject(projectId),
+        updateProject: (parent, { projectId, body }) => projectsService.updateProject(projectId, body),
+    },
     Project: {
-        client: (parent) => clientsService.getClientById(parent.clientId),
+        client: (parent) => clientsService.getClientById(parent.client),
     }
 }
