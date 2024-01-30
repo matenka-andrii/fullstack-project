@@ -16,7 +16,7 @@
 + `PORT=5000`
 
 5. Start the Docker containers (Note: You must have the Docker Desktop application installed on your system):
-+ `docker compose up -d` Note: You must have the Docker Desktop application installed on your system to execute this command.
++ `docker compose up -d`
 
 6. Start the server:
 + `npm run start:dev`
