@@ -11,7 +11,6 @@ const GET_PROJECTS = gql`
         }
     }
 `;
-
 const GET_PROJECT = gql`
     query getProject($projectId: String!) {
         project(projectId: $projectId) {

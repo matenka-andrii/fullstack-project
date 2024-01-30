@@ -1,5 +1,8 @@
-import { FaExclamationTriangle } from 'react-icons/fa';
+// Components
 import { Link } from 'react-router-dom';
+
+// Icons
+import { FaExclamationTriangle } from 'react-icons/fa';
 
 export default function NotFound() {
     return <div className='d-flex flex-column justify-content-center align-items-center mt-5'>
