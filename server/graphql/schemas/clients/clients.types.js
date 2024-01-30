@@ -5,7 +5,7 @@ const Clients = `
     }
     type Mutation {
         addClient(body: AddClientBody): Client
-        deleteClient(clientId: String!): String
+        deleteClient(clientId: String!): Client
     }
     
     input AddClientBody {

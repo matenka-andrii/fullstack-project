@@ -6,7 +6,7 @@ const Projects = `
     
     type Mutation {
         addProject(body: AddProjectBody): Project
-        deleteProject(projectId: String!): String
+        deleteProject(projectId: String!): Project
         updateProject(projectId: String!, body: UpdateProjectBody): Project
     }
     

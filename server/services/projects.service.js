@@ -33,7 +33,7 @@ export class ProjectsService {
 
         await Project.deleteOne({ _id: projectId });
 
-        return `Project with ID ${projectId} has been successfully deleted.`;
+        return project.toResponse();
     }
     async updateProject(projectId, body) {
         let project = await Project.findById(projectId);

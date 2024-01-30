@@ -38,6 +38,6 @@ export class ClientsService {
 
         await Client.deleteOne({ _id: clientId });
 
-        return `Client with ID ${clientId} has been successfully deleted.`;
+        return client.toResponse();
     }
 }
